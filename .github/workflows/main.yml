@@ -1,0 +1,15 @@
+name: Push_Action
+
+on:
+  push:
+    branches:
+      -main
+
+jobs:
+  dependabot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: dependabot/action@v2      
+        with:
+          repo-token: ${{ secrets.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 }}
