@@ -12,6 +12,6 @@ jobs:
     steps:
       - uses: actions/first-interaction@v1
         with:
-          repo-token: ${{ secrets.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 }} 
+          repo-token: ${{ secrets.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 }} 
           issue-message: '# Message with markdown.\nThis is the message that will be displayed on users first issue.'
           pr-message: 'Message that will be displayed on users first pr. Look, a `code block` for markdown.'
