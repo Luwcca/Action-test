@@ -1,0 +1,17 @@
+
+name: Push_Action2
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  dependabot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.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 }} 
+          issue-message: '# Message with markdown.\nThis is the message that will be displayed on users first issue.'
+          pr-message: 'Message that will be displayed on users first pr. Look, a `code block` for markdown.'
