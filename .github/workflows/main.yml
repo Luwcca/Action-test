@@ -3,7 +3,7 @@ name: Push_Action
 on:
   push:
     branches:
-      -main
+      - main
 
 jobs:
   dependabot:
